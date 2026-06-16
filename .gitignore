@@ -1,0 +1,8 @@
+# Scratch scripts & temp files
+scratch/
+*.pyc
+__pycache__/
+
+# OS files
+Thumbs.db
+.DS_Store
