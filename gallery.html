@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Tirumala - Branded E-commerce Product Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #071624;
+            --primary-navy: #0b2545;
+            --accent-blue: #0077b6;
+            --accent-teal: #00b4d8;
+            --bg-light-gray: #f8fafc;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light-gray);
+            color: var(--text-dark);
+            padding: 50px 20px;
+            margin: 0;
+        }
+        
+        .header {
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary-navy);
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section-container {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-navy);
+            border-left: 5px solid var(--accent-blue);
+            padding-left: 14px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .final-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        
+        .final-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
+            text-align: center;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .final-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 119, 182, 0.08);
+            border-color: rgba(0, 119, 182, 0.15);
+        }
+        
+        .final-img-container {
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .final-img-container img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+        }
+        
+        .final-card:hover .final-img-container img {
+            transform: scale(1.04);
+        }
+        
+        .final-title {
+            padding: 16px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: #ffffff;
+            border-top: 1px solid #f1f5f9;
+            color: var(--primary-navy);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+        
+        .final-title code {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background-color: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            word-break: break-all;
+            margin-top: 6px;
+            display: inline-block;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+            color: var(--accent-blue);
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Outfit', sans-serif;
+            transition: var(--transition-smooth);
+            background-color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 1.5px solid #e2e8f0;
+        }
+        
+        .back-link:hover {
+            color: #ffffff;
+            background-color: var(--accent-blue);
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 119, 182, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sri Tirumala - Premium Product Asset Gallery</h1>
+        <p>Previewing all active high-quality, auto-cropped product packaging images rendered with solid boundaries and clean white studio backgrounds.</p>
+    </div>
+
+    <!-- 1. Core 12 Categories -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-boxes-stacked"></i> 12 Core Product Categories</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_bleach.png" alt="Tirumala Bleaching Powder">
+                </div>
+                <div class="final-title">Tirumala Bleaching Powder<code>assets/tirumala_bleach.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_floor_orange.png" alt="Tirumala Floor Cleaner">
+                </div>
+                <div class="final-title">Tirumala Floor Cleaner<code>assets/tirumala_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_floor_orange.png" alt="Cheetah Floor Cleaner">
+                </div>
+                <div class="final-title">Cheetah Floor Cleaner<code>assets/cheetah_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_orange.png" alt="Liger Floor Cleaner">
+                </div>
+                <div class="final-title">Liger Floor Cleaner<code>assets/liger_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_orange.png" alt="Home Doctor Floor Cleaner">
+                </div>
+                <div class="final-title">Home Doctor Floor Cleaner<code>assets/home_doctor_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/user_glass_cleaner.png" alt="Tirumala Coli Fresh Glass Cleaner">
+                </div>
+                <div class="final-title">Tirumala Coli Fresh Glass Cleaner<code>assets/user_glass_cleaner.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_dish.png" alt="Tirumala Dish Wash Liquid">
+                </div>
+                <div class="final-title">Tirumala Dish Wash Liquid<code>assets/tirumala_dish.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_acid_green.png" alt="Tirumala Cleaning Acid">
+                </div>
+                <div class="final-title">Tirumala Cleaning Acid<code>assets/tirumala_acid_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_acid_yellow.png" alt="Cheetah Cleaning Acid">
+                </div>
+                <div class="final-title">Cheetah Cleaning Acid<code>assets/cheetah_acid_yellow.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_black_phenyl.png" alt="Tirumala Black Cleaning Liquid">
+                </div>
+                <div class="final-title">Tirumala Black Cleaning Liquid<code>assets/tirumala_black_phenyl.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/horpic_toilet_blue.png" alt="Horpic Toilet Cleaner">
+                </div>
+                <div class="final-title">Horpic Toilet Cleaner<code>assets/horpic_toilet_blue.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_ant_killer.png" alt="Cheetah Ant Killer">
+                </div>
+                <div class="final-title">Cheetah Ant Killer<code>assets/cheetah_ant_killer.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Tirumala Floor Cleaner Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Tirumala Floor Cleaner Flavor Variants (Interactive Selector Assets)</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_floor_orange.png" alt="Orange Fresh">
+                </div>
+                <div class="final-title">Orange Fresh Flavor (Orange Bottle)<code>assets/tirumala_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_floor_green.png" alt="Lime Fresh">
+                </div>
+                <div class="final-title">Lime Fresh Flavor (Green Bottle)<code>assets/tirumala_floor_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_floor_pink.png" alt="Floral">
+                </div>
+                <div class="final-title">Floral Flavor (Pink Bottle)<code>assets/tirumala_floor_pink.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_floor_white.png" alt="White (Herbal)">
+                </div>
+                <div class="final-title">White Pine & Herbal (White Bottle)<code>assets/tirumala_floor_white.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Cheetah Floor Cleaner Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Cheetah Floor Cleaner Flavor Variants (Interactive Selector Assets)</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_floor_orange.png" alt="Orange Fresh">
+                </div>
+                <div class="final-title">Orange Fresh Flavor (Orange Bottle)<code>assets/cheetah_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_floor_green.png" alt="Lime Fresh">
+                </div>
+                <div class="final-title">Lime Fresh Flavor (Green Bottle)<code>assets/cheetah_floor_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_floor_pink.png" alt="Floral">
+                </div>
+                <div class="final-title">Floral Flavor (Pink Bottle)<code>assets/cheetah_floor_pink.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/cheetah_floor_white.png" alt="White (Powerful)">
+                </div>
+                <div class="final-title">White Pine & Powerful (White Bottle)<code>assets/cheetah_floor_white.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Liger Floor Cleaner Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Liger Floor Cleaner Flavor Variants (Interactive Selector Assets)</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_orange.png" alt="Orange Fresh">
+                </div>
+                <div class="final-title">Orange Fresh Flavor (Orange Bottle)<code>assets/liger_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_green.png" alt="Lime Fresh">
+                </div>
+                <div class="final-title">Lime Fresh Flavor (Green Bottle)<code>assets/liger_floor_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_pink.png" alt="Floral">
+                </div>
+                <div class="final-title">Floral Flavor (Pink Bottle)<code>assets/liger_floor_pink.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_white.png" alt="White (Pine)">
+                </div>
+                <div class="final-title">White Pine (White Bottle)<code>assets/liger_floor_white.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/liger_floor_yellow.png" alt="Lemon Yellow">
+                </div>
+                <div class="final-title">Lemon Yellow (Yellow Bottle)<code>assets/liger_floor_yellow.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Home Doctor Floor Cleaner Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Home Doctor Floor Cleaner Flavor Variants (Interactive Selector Assets)</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_orange.png" alt="Orange Fresh">
+                </div>
+                <div class="final-title">Orange Fresh Flavor (Orange Bottle)<code>assets/home_doctor_floor_orange.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_green.png" alt="Lime Fresh">
+                </div>
+                <div class="final-title">Lime Fresh Flavor (Green Bottle)<code>assets/home_doctor_floor_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_pink.png" alt="Floral">
+                </div>
+                <div class="final-title">Floral Flavor (Pink Bottle)<code>assets/home_doctor_floor_pink.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_white.png" alt="White (Pine)">
+                </div>
+                <div class="final-title">White Pine (White Bottle)<code>assets/home_doctor_floor_white.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/home_doctor_floor_yellow.png" alt="Lemon Yellow">
+                </div>
+                <div class="final-title">Lemon Yellow (Yellow Bottle)<code>assets/home_doctor_floor_yellow.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Tirumala Cleaning Acid Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-bottle-droplet"></i> Tirumala Cleaning Acid Variants</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_acid_green.png" alt="Tirumala Cleaning Acid Green">
+                </div>
+                <div class="final-title">Classic Green Bottle<code>assets/tirumala_acid_green.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/tirumala_acid_yellow.png" alt="Tirumala Cleaning Acid Yellow">
+                </div>
+                <div class="final-title">Yellow Bottle<code>assets/tirumala_acid_yellow.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Horpic Toilet Cleaner Variants -->
+    <div class="section-container">
+        <div class="section-title"><i class="fa-solid fa-toilet"></i> Horpic Toilet Cleaner Variants</div>
+        <div class="final-grid">
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/horpic_toilet_blue.png" alt="Horpic Toilet Cleaner Blue">
+                </div>
+                <div class="final-title">Blue Bottle (Descaler Gel)<code>assets/horpic_toilet_blue.png</code></div>
+            </div>
+            <div class="final-card">
+                <div class="final-img-container">
+                    <img src="assets/horpic_toilet_white.png" alt="Horpic Toilet Cleaner White">
+                </div>
+                <div class="final-title">White Bottle (Lime Descaler)<code>assets/horpic_toilet_white.png</code></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; padding-bottom: 50px;">
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Sri Tirumala Homepage</a>
+    </div>
+</body>
+</html>
