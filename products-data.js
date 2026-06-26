@@ -75,7 +75,7 @@ const productModalData = {
             {
                 name: "Tirumala Floor Cleaner - Floral",
                 desc: "Disinfectant floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
-                image: "assets/tirumala_floor_pink.png",
+                image: "assets/tirumala_floor_pink_new.png",
                 highlights: [
                     "Kills 99.9% of household bacteria and germs",
                     "Long-lasting rose petals floral fragrance",
@@ -467,12 +467,12 @@ const productModalData = {
         tag: "Heavy Duty Acid",
         brand: "TIRUMALA BRAND",
         desc: "Industrial-grade scale-removing and toilet descaling acid formulated in a premium bottle.",
-        image: "assets/tirumala_acid_green.png",
+        image: "assets/tirumala_acid_green_new.png",
         subProducts: [
             {
                 name: "Tirumala Cleaning Acid - Classic Green Bottle",
                 desc: "Classic green bottle scale-removing and construction-cleanup acid.",
-                image: "assets/tirumala_acid_green.png",
+                image: "assets/tirumala_acid_green_new.png",
                 highlights: [
                     "Powerful active descaling formula",
                     "Quickly dissolves cement stains, rust scaling, and water marks",
@@ -635,6 +635,53 @@ const productModalData = {
                     "Formulation": "Dry Powder",
                     "Target Pests": "Ants, Termites, Cockroaches, Fleas",
                     "Manufacturer": "Cheetah Brand (Sri Tirumala)"
+                }
+            }
+        ]
+    },
+    mxo_scrubbers: {
+        title: "Mxo Cleaning Scrubbers",
+        tag: "Scrubbing Tools",
+        brand: "MXO BRAND",
+        desc: "Heavy-duty rust-free steel scrubbers and anti-bacterial scrubbing pads designed for kitchen and utensil cleaning.",
+        image: "assets/mxo_steel_scrubber.png",
+        subProducts: [
+            {
+                name: "Mxo Stainless Steel Scrubber",
+                desc: "High-quality, rust-free, and long-lasting stainless steel scrubbers. Ideal for cleaning tough grease and burnt food from pots, pans, ovens, and sinks.",
+                image: "assets/mxo_steel_scrubber.png",
+                highlights: [
+                    "100% Stainless steel - Rust Free",
+                    "Extremely durable and long life",
+                    "Heavy duty pack of 12 scrubbers",
+                    "Safe on hands, tough on stubborn stains"
+                ],
+                sizes: ["Pack of 12 pcs"],
+                specs: {
+                    "Material": "Stainless Steel",
+                    "Rust Resistance": "Non-Rust Formulation",
+                    "Size": "Big Size",
+                    "Primary Use": "Pots, Pans, Ovens, Sinks, Slabs",
+                    "Manufacturer": "Sri Tirumala Chemical Industries"
+                }
+            },
+            {
+                name: "Mxo Super Clean Brite Scrubber Pad",
+                desc: "Anti-bacterial, heavy-duty green scrubbing pad for quick and scratch-free cleaning of dishes, glassware, and slabs.",
+                image: "assets/mxo_scrubber_pad.png",
+                highlights: [
+                    "Anti-bacterial material blocks odors",
+                    "Heavy duty pack of 5 scrubbers",
+                    "Long-lasting sponge scrub pad",
+                    "Excellent for kitchen utensils and bathroom tubs"
+                ],
+                sizes: ["Pack of 5 pcs"],
+                specs: {
+                    "Material": "Heavy-duty Poly-synthetic fiber",
+                    "Special Feature": "Anti-Bacterial Coating",
+                    "Durability": "Long Life & Economic",
+                    "Primary Use": "Dishes, Glassware, Tubs, Tiles",
+                    "Manufacturer": "Sri Tirumala Chemical Industries"
                 }
             }
         ]
