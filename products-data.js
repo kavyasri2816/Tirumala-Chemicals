@@ -75,14 +75,19 @@ const productModalData = {
             {
                 name: "Tirumala Floor Cleaner - Floral",
                 desc: "Disinfectant floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
-                image: "assets/tirumala_floor_pink_new.png",
+                image: "assets/tirumala_floor_pink.png",
+                sizeImages: {
+                    "650ml Bottle": "assets/tirumala_floor_pink_new.png",
+                    "1L Bottle": "assets/tirumala_floor_pink.png",
+                    "5L Can": "assets/tirumala_floor_pink.png"
+                },
                 highlights: [
                     "Kills 99.9% of household bacteria and germs",
                     "Long-lasting rose petals floral fragrance",
                     "Safe for marble, granite, tiles, and wood floors",
                     "Gentle non-corrosive skin-safe formulation"
                 ],
-                sizes: ["1L Bottle", "5L Can"],
+                sizes: ["650ml Bottle", "1L Bottle", "5L Can"],
                 specs: {
                     "pH Level": "Neutral 7.0",
                     "Fragrance": "Floral Petals",
@@ -639,16 +644,16 @@ const productModalData = {
             }
         ]
     },
-    mxo_scrubbers: {
-        title: "Mxo Cleaning Scrubbers",
+    mxo_steel_scrubber: {
+        title: "Mxo Stainless Steel Scrubber",
         tag: "Scrubbing Tools",
         brand: "MXO BRAND",
-        desc: "Heavy-duty rust-free steel scrubbers and anti-bacterial scrubbing pads designed for kitchen and utensil cleaning.",
+        desc: "High-quality, rust-free, and long-lasting stainless steel scrubbers. Ideal for cleaning tough grease and burnt food from pots, pans, ovens, and sinks.",
         image: "assets/mxo_steel_scrubber.png",
         subProducts: [
             {
                 name: "Mxo Stainless Steel Scrubber",
-                desc: "High-quality, rust-free, and long-lasting stainless steel scrubbers. Ideal for cleaning tough grease and burnt food from pots, pans, ovens, and sinks.",
+                desc: "High-quality, rust-free, and long-lasting stainless steel scrubbers. Ideal for cleaning tough grease and burnt food.",
                 image: "assets/mxo_steel_scrubber.png",
                 highlights: [
                     "100% Stainless steel - Rust Free",
@@ -664,7 +669,16 @@ const productModalData = {
                     "Primary Use": "Pots, Pans, Ovens, Sinks, Slabs",
                     "Manufacturer": "Sri Tirumala Chemical Industries"
                 }
-            },
+            }
+        ]
+    },
+    mxo_scrubber_pad: {
+        title: "Mxo Super Clean Brite Scrubber Pad",
+        tag: "Scrubbing Tools",
+        brand: "MXO BRAND",
+        desc: "Anti-bacterial, heavy-duty green scrubbing pad for quick and scratch-free cleaning of dishes, glassware, and slabs.",
+        image: "assets/mxo_scrubber_pad.png",
+        subProducts: [
             {
                 name: "Mxo Super Clean Brite Scrubber Pad",
                 desc: "Anti-bacterial, heavy-duty green scrubbing pad for quick and scratch-free cleaning of dishes, glassware, and slabs.",

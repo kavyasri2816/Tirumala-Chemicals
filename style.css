@@ -1695,6 +1695,7 @@ img {
 .stagger-delay-11 { transition-delay: 1.1s; }
 .stagger-delay-12 { transition-delay: 1.2s; }
 .stagger-delay-13 { transition-delay: 1.3s; }
+.stagger-delay-14 { transition-delay: 1.4s; }
 
 /* Custom animation duration for slower/softer entries */
 .duration-slow {

@@ -150,8 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const subProduct = categoryData.subProducts[activeSubProductIndex];
 
-        // Update main modal image based on sub-product if available, otherwise fallback to category image
-        if (subProduct.image) {
+        // Update main modal image based on selected size, sub-product, or category image
+        const selectedSize = subProduct.sizes[activeSizeIndex];
+        if (subProduct.sizeImages && subProduct.sizeImages[selectedSize]) {
+            modalProductImg.src = subProduct.sizeImages[selectedSize];
+        } else if (subProduct.image) {
             modalProductImg.src = subProduct.image;
         } else {
             modalProductImg.src = categoryData.image;
@@ -186,6 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Set active class
                 sizeButton.classList.add('active');
                 activeSizeIndex = index;
+
+                // Update image if size-specific image exists
+                if (subProduct.sizeImages && subProduct.sizeImages[size]) {
+                    modalProductImg.src = subProduct.sizeImages[size];
+                } else if (subProduct.image) {
+                    modalProductImg.src = subProduct.image;
+                } else {
+                    modalProductImg.src = categoryData.image;
+                }
+
                 // Update inquiry buttons with new selected size
                 updateModalInquiryButtons();
             });
