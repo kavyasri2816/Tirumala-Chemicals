@@ -160,6 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
             modalProductImg.src = categoryData.image;
         }
 
+        // Update Modal Title dynamically with selected flavor and size
+        modalProductTitle.innerText = `${subProduct.name} (${selectedSize})`;
+
         // 1. Render Highlights List
         highlightsListContainer.innerHTML = '';
         subProduct.highlights.forEach(highlight => {
@@ -171,7 +174,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Render Specifications Table
         specsTableBody.innerHTML = '';
+        
+        // Add dynamic Capacity row
+        const capTr = document.createElement('tr');
+        capTr.innerHTML = `<th>Capacity</th><td>${selectedSize}</td>`;
+        specsTableBody.appendChild(capTr);
+
         for (const [key, val] of Object.entries(subProduct.specs)) {
+            if (key.toLowerCase() === 'capacity' || key.toLowerCase() === 'packaging size') continue;
             const tr = document.createElement('tr');
             tr.innerHTML = `<th>${key}</th><td>${val}</td>`;
             specsTableBody.appendChild(tr);
@@ -197,6 +207,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalProductImg.src = subProduct.image;
                 } else {
                     modalProductImg.src = categoryData.image;
+                }
+
+                // Update Title & specs table dynamically on size change
+                modalProductTitle.innerText = `${subProduct.name} (${size})`;
+                const capCell = specsTableBody.querySelector('tr td');
+                if (capCell) {
+                    capCell.innerText = size;
                 }
 
                 // Update inquiry buttons with new selected size
@@ -238,10 +255,22 @@ document.addEventListener('DOMContentLoaded', () => {
             pillButton.className = `size-pill ${index === activeSubProductIndex ? 'active' : ''}`;
             pillButton.innerText = sub.name.replace("Tirumala Floor Cleaner - ", "").replace("Cheetah Floor Cleaner - ", "").replace("Liger Floor Cleaner - ", "").replace("Home Doctor Floor Cleaner - ", "").replace("Tirumala Cleaning Acid - ", "").replace("Horpic Toilet Cleaner - ", "").replace("Tirumala ", "").replace("Coli Fresh ", ""); // Shorter name for buttons
             pillButton.addEventListener('click', () => {
+                const currentSub = categoryData.subProducts[activeSubProductIndex];
+                const selectedSizeName = currentSub.sizes[activeSizeIndex];
+
                 document.querySelectorAll('#sub-products-pills .size-pill').forEach(btn => btn.classList.remove('active'));
                 pillButton.classList.add('active');
                 activeSubProductIndex = index;
-                activeSizeIndex = 0; // Reset size selection when subproduct changes
+                
+                // Keep selected size persistent if available in the new subProduct
+                const newSub = categoryData.subProducts[activeSubProductIndex];
+                const matchingSizeIndex = newSub.sizes.indexOf(selectedSizeName);
+                if (matchingSizeIndex !== -1) {
+                    activeSizeIndex = matchingSizeIndex;
+                } else {
+                    activeSizeIndex = 0; // Fallback to first size
+                }
+                
                 renderSubProductDetails();
             });
             subProductsPillsContainer.appendChild(pillButton);
