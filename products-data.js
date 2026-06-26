@@ -27,95 +27,275 @@ const productModalData = {
             }
         ]
     },
-    floor_cleaner: {
-        title: "Tirumala Floor Cleaner",
-        tag: "Premium Floor Wash",
+    tirumala_floor_white_650: {
+        title: "White Floor Cleaner (650 ml)",
+        tag: "650 ml Series",
         brand: "TIRUMALA BRAND",
-        desc: "Premium disinfectant floor wash line featuring extreme shine and multi-flavor fragrances.",
-        image: "assets/tirumala_floor_orange.png",
-        subProducts: [
-            {
-                name: "Tirumala Floor Cleaner - Orange Fresh",
-                desc: "Disinfectant floor cleaner with a sweet Orange zest aroma. Delivers sparkling streak-free shine and deep grease cutting.",
-                image: "assets/tirumala_floor_orange.png",
-                highlights: [
-                    "Kills 99.9% of household bacteria and germs",
-                    "Sparkling streak-free shine",
-                    "Deep oil and dirt grease cutting",
-                    "Safe for marble, granite, tiles, and wood floors"
-                ],
-                sizes: ["1L Bottle", "5L Can"],
-                specs: {
-                    "pH Level": "Neutral 7.0",
-                    "Fragrance": "Orange Freshness",
-                    "Appearance": "Orange liquid",
-                    "Primary Use": "Office, Home, and Industrial Floors",
-                    "Manufacturer": "Sri Tirumala Chemical Industries"
-                }
-            },
-            {
-                name: "Tirumala Floor Cleaner - Lime Fresh",
-                desc: "Disinfectant floor cleaner with an invigorating Lime Fresh aroma. Removes sticky dirt and sanitizes in one mopping sweep.",
-                image: "assets/tirumala_floor_green.png",
-                highlights: [
-                    "Kills 99.9% of household bacteria and germs",
-                    "Removes sticky grease, mud, and stains instantly",
-                    "No residue or sticky layer post-mopping",
-                    "Refreshing lemon lime citrus fragrance"
-                ],
-                sizes: ["1L Bottle", "5L Can"],
-                specs: {
-                    "pH Level": "Neutral 7.0",
-                    "Fragrance": "Lime Freshness",
-                    "Appearance": "Light green liquid",
-                    "Primary Use": "Office, Home, and Industrial Floors",
-                    "Manufacturer": "Sri Tirumala Chemical Industries"
-                }
-            },
-            {
-                name: "Tirumala Floor Cleaner - Floral",
-                desc: "Disinfectant floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
-                image: "assets/tirumala_floor_pink.png",
-                sizeImages: {
-                    "650ml Bottle": "assets/tirumala_floor_pink_new.png",
-                    "1L Bottle": "assets/tirumala_floor_pink.png",
-                    "5L Can": "assets/tirumala_floor_pink.png"
-                },
-                highlights: [
-                    "Kills 99.9% of household bacteria and germs",
-                    "Long-lasting rose petals floral fragrance",
-                    "Safe for marble, granite, tiles, and wood floors",
-                    "Gentle non-corrosive skin-safe formulation"
-                ],
-                sizes: ["650ml Bottle", "1L Bottle", "5L Can"],
-                specs: {
-                    "pH Level": "Neutral 7.0",
-                    "Fragrance": "Floral Petals",
-                    "Appearance": "Pink liquid",
-                    "Primary Use": "Office, Home, and Industrial Floors",
-                    "Manufacturer": "Sri Tirumala Chemical Industries"
-                }
-            },
-            {
-                name: "Tirumala Floor Cleaner - White (Herbal)",
-                desc: "Premium white pine and herbal emulsion providing deep sanitizing cleaning action and natural insect repellency.",
-                image: "assets/tirumala_floor_white.png",
-                highlights: [
-                    "Herbal oil infused antibacterial formula",
-                    "Strong fresh pine wood sanitizing scent",
-                    "Highly effective in repelling flies, mosquitoes, and ants",
-                    "Ideal for hospital, lobby, kitchen, and factory floors"
-                ],
-                sizes: ["1L Bottle", "5L Can"],
-                specs: {
-                    "Active Matter": "Herbal Active Emulsion",
-                    "Fragrance": "Pine Wood Freshness",
-                    "Appearance": "White liquid",
-                    "Primary Use": "Household Disinfection & Insect Repelling",
-                    "Manufacturer": "Sri Tirumala Chemical Industries"
-                }
+        desc: "Premium white pine and herbal emulsion floor cleaner in a 650 ml bottle, providing deep sanitization and natural insect repellency.",
+        image: "assets/tirumala_floor_white_650.png",
+        subProducts: [{
+            name: "White Floor Cleaner (650 ml)",
+            desc: "Infused with natural herbal oils and premium white pine emulsion. Restores floor shine while naturally repelling crawling insects.",
+            image: "assets/tirumala_floor_white_650.png",
+            highlights: [
+                "Milky white pine active emulsion",
+                "Kills 99.9% of germs and bacteria",
+                "Repels flies, mosquitoes, and ants naturally",
+                "Ideal for kitchen, lobby, and factory floors"
+            ],
+            sizes: ["650 ml Bottle"],
+            specs: {
+                "Capacity": "650 ml",
+                "Color Variant": "Milky White",
+                "Active Emulsion": "Pine Wood Oil & Herbal Extract",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Household Disinfection & Pest Repelling",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
             }
-        ]
+        }]
+    },
+    tirumala_floor_green_650: {
+        title: "Green Floor Cleaner (650 ml)",
+        tag: "650 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant green floor cleaner with an invigorating Lime Fresh aroma in a 650 ml bottle.",
+        image: "assets/tirumala_floor_green_650.png",
+        subProducts: [{
+            name: "Green Floor Cleaner (650 ml)",
+            desc: "Invigorating lime floor wash that easily cuts through mud, sticky kitchen grease, and stains, leaving a streak-free shine.",
+            image: "assets/tirumala_floor_green_650.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Deep grease-cutting action",
+                "Refreshing citrus lime fragrance",
+                "Safe for marble, granite, wood, and tiles"
+            ],
+            sizes: ["650 ml Bottle"],
+            specs: {
+                "Capacity": "650 ml",
+                "Color Variant": "Light Green",
+                "Fragrance": "Lime Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Deep Floor Sanitation & Shine",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_yellow_650: {
+        title: "Yellow Floor Cleaner (650 ml)",
+        tag: "650 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Bright yellow floor cleaner with an invigorating citrus Lemon Fresh aroma in a 650 ml bottle.",
+        image: "assets/tirumala_floor_yellow_650.png",
+        subProducts: [{
+            name: "Yellow Floor Cleaner (650 ml)",
+            desc: "Formulated with a bright citrus lemon profile that leaves floors sparkling, completely clean, and free of residues.",
+            image: "assets/tirumala_floor_yellow_650.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Invigorating citrus lemon fragrance",
+                "Streak-free cleaning without residues",
+                "Mild skin-safe formulation"
+            ],
+            sizes: ["650 ml Bottle"],
+            specs: {
+                "Capacity": "650 ml",
+                "Color Variant": "Golden Yellow",
+                "Fragrance": "Lemon Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "General Floor Cleansing & Shine",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_orange_650: {
+        title: "Orange Floor Cleaner (650 ml)",
+        tag: "650 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant floor cleaner with a sweet Orange zest aroma in a 650 ml bottle.",
+        image: "assets/tirumala_floor_orange_650.png",
+        subProducts: [{
+            name: "Orange Floor Cleaner (650 ml)",
+            desc: "Formulated with sweet Orange zest extract. Delivers a sparkling streak-free floor shine and deep grease cutting.",
+            image: "assets/tirumala_floor_orange_650.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Deep oil and dirt grease cutting",
+                "Sweet, refreshing orange aroma",
+                "Streak-free finish on marble and tiles"
+            ],
+            sizes: ["650 ml Bottle"],
+            specs: {
+                "Capacity": "650 ml",
+                "Color Variant": "Peach Orange",
+                "Fragrance": "Orange Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Office, Home, and Industrial Floors",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_pink_650: {
+        title: "Pink Floor Cleaner (650 ml)",
+        tag: "650 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant floor cleaner with a sweet, long-lasting Floral fragrance in a 650 ml bottle.",
+        image: "assets/tirumala_floor_pink_650.png",
+        subProducts: [{
+            name: "Pink Floor Cleaner (650 ml)",
+            desc: "Features a beautiful rose petals scent. Sanitizes surfaces thoroughly and keeps your home smelling floral for hours.",
+            image: "assets/tirumala_floor_pink_650.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Long-lasting rose petals floral fragrance",
+                "Safe for marble, granite, wood, and tiles",
+                "Gentle non-corrosive skin-safe formulation"
+            ],
+            sizes: ["650 ml Bottle"],
+            specs: {
+                "Capacity": "650 ml",
+                "Color Variant": "Floral Pink",
+                "Fragrance": "Floral Petals",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Lobbies, Homes, and Washroom Floors",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_white_500: {
+        title: "White Floor Cleaner (500 ml)",
+        tag: "500 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Premium white pine and herbal emulsion floor cleaner in a 500 ml bottle, providing deep sanitization and natural insect repellency.",
+        image: "assets/tirumala_floor_white_500.png",
+        subProducts: [{
+            name: "White Floor Cleaner (500 ml)",
+            desc: "Infused with natural pine oils and herbal extracts. Cleans dirt while naturally repelling crawling insects.",
+            image: "assets/tirumala_floor_white_500.png",
+            highlights: [
+                "Pine wood active white emulsion",
+                "Kills 99.9% of germs and bacteria",
+                "Repels flies, mosquitoes, and ants naturally",
+                "Non-sticky, clean herbal finish"
+            ],
+            sizes: ["500 ml Bottle"],
+            specs: {
+                "Capacity": "500 ml",
+                "Color Variant": "Milky White",
+                "Active Emulsion": "Pine Wood Oil & Herbal Extract",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Household Disinfection & Pest Repelling",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_green_500: {
+        title: "Green Floor Cleaner (500 ml)",
+        tag: "500 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant green floor cleaner with an invigorating Lime Fresh aroma in a 500 ml bottle.",
+        image: "assets/tirumala_floor_green_500.png",
+        subProducts: [{
+            name: "Green Floor Cleaner (500 ml)",
+            desc: "Invigorating lime floor wash that easily cuts through mud, sticky kitchen grease, and stains, leaving a streak-free shine.",
+            image: "assets/tirumala_floor_green_500.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Deep grease-cutting action",
+                "Refreshing citrus lime fragrance",
+                "Safe for marble, granite, wood, and tiles"
+            ],
+            sizes: ["500 ml Bottle"],
+            specs: {
+                "Capacity": "500 ml",
+                "Color Variant": "Light Green",
+                "Fragrance": "Lime Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Deep Floor Sanitation & Shine",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_yellow_500: {
+        title: "Yellow Floor Cleaner (500 ml)",
+        tag: "500 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Bright yellow floor cleaner with an invigorating citrus Lemon Fresh aroma in a 500 ml bottle.",
+        image: "assets/tirumala_floor_yellow_500.png",
+        subProducts: [{
+            name: "Yellow Floor Cleaner (500 ml)",
+            desc: "Formulated with a bright citrus lemon profile that leaves floors sparkling, completely clean, and free of residues.",
+            image: "assets/tirumala_floor_yellow_500.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Invigorating citrus lemon fragrance",
+                "Streak-free cleaning without residues",
+                "Mild skin-safe formulation"
+            ],
+            sizes: ["500 ml Bottle"],
+            specs: {
+                "Capacity": "500 ml",
+                "Color Variant": "Golden Yellow",
+                "Fragrance": "Lemon Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "General Floor Cleansing & Shine",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_orange_500: {
+        title: "Orange Floor Cleaner (500 ml)",
+        tag: "500 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant floor cleaner with a sweet Orange zest aroma in a 500 ml bottle.",
+        image: "assets/tirumala_floor_orange_500.png",
+        subProducts: [{
+            name: "Orange Floor Cleaner (500 ml)",
+            desc: "Formulated with sweet Orange zest extract. Delivers a sparkling streak-free floor shine and deep grease cutting.",
+            image: "assets/tirumala_floor_orange_500.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Deep oil and dirt grease cutting",
+                "Sweet, refreshing orange aroma",
+                "Streak-free finish on marble and tiles"
+            ],
+            sizes: ["500 ml Bottle"],
+            specs: {
+                "Capacity": "500 ml",
+                "Color Variant": "Peach Orange",
+                "Fragrance": "Orange Freshness",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Office, Home, and Industrial Floors",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
+    },
+    tirumala_floor_pink_500: {
+        title: "Pink Floor Cleaner (500 ml)",
+        tag: "500 ml Series",
+        brand: "TIRUMALA BRAND",
+        desc: "Disinfectant floor cleaner with a sweet, long-lasting Floral fragrance in a 500 ml bottle.",
+        image: "assets/tirumala_floor_pink_500.png",
+        subProducts: [{
+            name: "Pink Floor Cleaner (500 ml)",
+            desc: "Features a beautiful rose petals scent. Sanitizes surfaces thoroughly and keeps your home smelling floral for hours.",
+            image: "assets/tirumala_floor_pink_500.png",
+            highlights: [
+                "Kills 99.9% of household bacteria and germs",
+                "Long-lasting rose petals floral fragrance",
+                "Safe for marble, granite, wood, and tiles",
+                "Gentle non-corrosive skin-safe formulation"
+            ],
+            sizes: ["500 ml Bottle"],
+            specs: {
+                "Capacity": "500 ml",
+                "Color Variant": "Floral Pink",
+                "Fragrance": "Floral Petals",
+                "pH Level": "Neutral 7.0",
+                "Primary Use": "Lobbies, Homes, and Washroom Floors",
+                "Manufacturer": "Sri Tirumala Chemical Industries"
+            }
+        }]
     },
     cheetah_floor_cleaner: {
         title: "Cheetah Floor Cleaner",
