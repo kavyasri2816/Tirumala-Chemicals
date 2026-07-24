@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             finalImage = subProduct.image;
         }
         // Add cache-busting version parameter to ensure newly uploaded images render immediately
-        modalProductImg.src = `${finalImage}?v=20260724`;
+        modalProductImg.src = `${finalImage}?v=20260724_v2`;
 
         // Update Modal Title dynamically with selected flavor and size (supporting name overrides)
         const displayName = (subProduct.sizeSpecs && subProduct.sizeSpecs[selectedSize] && subProduct.sizeSpecs[selectedSize].name) || subProduct.name;
