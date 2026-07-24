@@ -152,13 +152,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update main modal image based on selected size, sub-product, or category image
         const selectedSize = subProduct.sizes[activeSizeIndex];
+        let finalImage = categoryData.image;
         if (subProduct.sizeImages && subProduct.sizeImages[selectedSize]) {
-            modalProductImg.src = subProduct.sizeImages[selectedSize];
+            finalImage = subProduct.sizeImages[selectedSize];
         } else if (subProduct.image) {
-            modalProductImg.src = subProduct.image;
-        } else {
-            modalProductImg.src = categoryData.image;
+            finalImage = subProduct.image;
         }
+        // Add cache-busting version parameter to ensure newly uploaded images render immediately
+        modalProductImg.src = `${finalImage}?v=20260724`;
 
         // Update Modal Title dynamically with selected flavor and size (supporting name overrides)
         const displayName = (subProduct.sizeSpecs && subProduct.sizeSpecs[selectedSize] && subProduct.sizeSpecs[selectedSize].name) || subProduct.name;
