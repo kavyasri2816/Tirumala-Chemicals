@@ -160,8 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
             modalProductImg.src = categoryData.image;
         }
 
-        // Update Modal Title dynamically with selected flavor and size
-        modalProductTitle.innerText = `${subProduct.name} (${selectedSize})`;
+        // Update Modal Title dynamically with selected flavor and size (supporting name overrides)
+        const displayName = (subProduct.sizeSpecs && subProduct.sizeSpecs[selectedSize] && subProduct.sizeSpecs[selectedSize].name) || subProduct.name;
+        modalProductTitle.innerText = `${displayName} (${selectedSize})`;
 
         // 1. Render Highlights List
         highlightsListContainer.innerHTML = '';
@@ -172,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             highlightsListContainer.appendChild(li);
         });
 
-        // 2. Render Specifications Table
+        // 2. Render Specifications Table (incorporating overrides)
         specsTableBody.innerHTML = '';
         
         // Add dynamic Capacity row
@@ -180,7 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
         capTr.innerHTML = `<th>Capacity</th><td>${selectedSize}</td>`;
         specsTableBody.appendChild(capTr);
 
-        for (const [key, val] of Object.entries(subProduct.specs)) {
+        const specs = { ...subProduct.specs };
+        if (subProduct.sizeSpecs && subProduct.sizeSpecs[selectedSize]) {
+            Object.assign(specs, subProduct.sizeSpecs[selectedSize]);
+        }
+        delete specs.name; // Don't show the name override in specs table
+
+        for (const [key, val] of Object.entries(specs)) {
             if (key.toLowerCase() === 'capacity' || key.toLowerCase() === 'packaging size') continue;
             const tr = document.createElement('tr');
             tr.innerHTML = `<th>${key}</th><td>${val}</td>`;
@@ -194,30 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
             sizeButton.className = `size-pill ${index === activeSizeIndex ? 'active' : ''}`;
             sizeButton.innerText = size;
             sizeButton.addEventListener('click', () => {
-                // Remove active classes
-                document.querySelectorAll('#packaging-size-pills .size-pill').forEach(btn => btn.classList.remove('active'));
-                // Set active class
-                sizeButton.classList.add('active');
                 activeSizeIndex = index;
-
-                // Update image if size-specific image exists
-                if (subProduct.sizeImages && subProduct.sizeImages[size]) {
-                    modalProductImg.src = subProduct.sizeImages[size];
-                } else if (subProduct.image) {
-                    modalProductImg.src = subProduct.image;
-                } else {
-                    modalProductImg.src = categoryData.image;
-                }
-
-                // Update Title & specs table dynamically on size change
-                modalProductTitle.innerText = `${subProduct.name} (${size})`;
-                const capCell = specsTableBody.querySelector('tr td');
-                if (capCell) {
-                    capCell.innerText = size;
-                }
-
-                // Update inquiry buttons with new selected size
-                updateModalInquiryButtons();
+                renderSubProductDetails();
             });
             packagingSizePillsContainer.appendChild(sizeButton);
         });

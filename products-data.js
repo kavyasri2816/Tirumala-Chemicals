@@ -67,6 +67,12 @@ const productModalData = {
                     "500ml Bottle": "assets/tirumala_floor_green_500.png",
                     "5L Can": "assets/tirumala_floor_green.png"
                 },
+                sizeSpecs: {
+                    "650ml Bottle": {
+                        "name": "Tirumala Floor Cleaner - Jasmine",
+                        "Fragrance": "Jasmine Freshness"
+                    }
+                },
                 highlights: [
                     "Kills 99.9% of household bacteria and germs",
                     "Removes sticky grease, mud, and stains instantly",
@@ -114,6 +120,12 @@ const productModalData = {
                     "650ml Bottle": "assets/tirumala_floor_white_650.png",
                     "500ml Bottle": "assets/tirumala_floor_white_500.png",
                     "5L Can": "assets/tirumala_floor_white.png"
+                },
+                sizeSpecs: {
+                    "650ml Bottle": {
+                        "name": "Tirumala Floor Cleaner - Sandal",
+                        "Fragrance": "Sandal Freshness"
+                    }
                 },
                 highlights: [
                     "Herbal oil infused antibacterial formula",
