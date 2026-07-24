@@ -356,6 +356,10 @@ const productModalData = {
                 name: "Home Doctor Floor Cleaner - Orange Fresh",
                 desc: "Premium Home Doctor floor cleaner with a sweet Orange zest aroma. Delivers sparkling streak-free shine and deep grease cutting.",
                 image: "assets/home_doctor_floor_orange.png",
+                sizeImages: {
+                    "1L Bottle": "assets/home_doctor_floor_orange.png",
+                    "5L Can": "assets/home_doctor_floor_orange_5l.png"
+                },
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
@@ -394,6 +398,10 @@ const productModalData = {
                 name: "Home Doctor Floor Cleaner - Floral",
                 desc: "Premium Home Doctor floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
                 image: "assets/home_doctor_floor_pink.png",
+                sizeImages: {
+                    "1L Bottle": "assets/home_doctor_floor_pink.png",
+                    "5L Can": "assets/home_doctor_floor_pink_5l.png"
+                },
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
@@ -413,6 +421,10 @@ const productModalData = {
                 name: "Home Doctor Floor Cleaner - White (Pine)",
                 desc: "Premium Home Doctor white pine emulsion providing deep sanitizing cleaning action and natural insect repellency.",
                 image: "assets/home_doctor_floor_white.png",
+                sizeImages: {
+                    "1L Bottle": "assets/home_doctor_floor_white.png",
+                    "5L Can": "assets/home_doctor_floor_white_5l.png"
+                },
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Herbal oil infused antibacterial formula",
@@ -432,6 +444,10 @@ const productModalData = {
                 name: "Home Doctor Floor Cleaner - Lemon Yellow",
                 desc: "Premium Home Doctor floor cleaner with a bright Lemon Fresh aroma. Cuts grease, repels insects, and sanitizes.",
                 image: "assets/home_doctor_floor_yellow.png",
+                sizeImages: {
+                    "1L Bottle": "assets/home_doctor_floor_yellow.png",
+                    "5L Can": "assets/home_doctor_floor_yellow_5l.png"
+                },
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
