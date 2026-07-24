@@ -246,12 +246,12 @@ const productModalData = {
         tag: "Liger Brand Premium",
         brand: "LIGER BRAND",
         desc: "Premium Liger Brand floor wash offering fresh aromas, ultimate cleanliness, and a long-lasting shine.",
-        image: "assets/liger_floor_orange.png",
+        image: "assets/liger_floor_orange_new.png",
         subProducts: [
             {
                 name: "Liger Floor Cleaner - Orange Fresh",
                 desc: "Premium Liger floor cleaner with a sweet Orange zest aroma. Delivers sparkling streak-free shine and deep grease cutting.",
-                image: "assets/liger_floor_orange.png",
+                image: "assets/liger_floor_orange_new.png",
                 highlights: [
                     "Formulated by premium Liger Brand",
                     "Kills 99.9% of household bacteria and germs",
@@ -270,7 +270,7 @@ const productModalData = {
             {
                 name: "Liger Floor Cleaner - Lime Fresh",
                 desc: "Premium Liger floor cleaner with an invigorating Lime Fresh aroma. Removes sticky dirt and sanitizes.",
-                image: "assets/liger_floor_green.png",
+                image: "assets/liger_floor_green_new.png",
                 highlights: [
                     "Formulated by premium Liger Brand",
                     "Kills 99.9% of household bacteria and germs",
@@ -289,7 +289,7 @@ const productModalData = {
             {
                 name: "Liger Floor Cleaner - Floral",
                 desc: "Premium Liger floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
-                image: "assets/liger_floor_pink.png",
+                image: "assets/liger_floor_pink_new.png",
                 highlights: [
                     "Formulated by premium Liger Brand",
                     "Kills 99.9% of household bacteria and germs",
@@ -308,7 +308,7 @@ const productModalData = {
             {
                 name: "Liger Floor Cleaner - White (Pine)",
                 desc: "Premium Liger white pine emulsion providing deep sanitizing cleaning action and natural insect repellency.",
-                image: "assets/liger_floor_white.png",
+                image: "assets/liger_floor_white_new.png",
                 highlights: [
                     "Formulated by premium Liger Brand",
                     "Herbal oil infused antibacterial formula",
@@ -327,7 +327,7 @@ const productModalData = {
             {
                 name: "Liger Floor Cleaner - Lemon Yellow",
                 desc: "Premium Liger floor cleaner with a bright Lemon Fresh aroma. Cuts grease, repels insects, and sanitizes.",
-                image: "assets/liger_floor_yellow.png",
+                image: "assets/liger_floor_yellow_new.png",
                 highlights: [
                     "Formulated by premium Liger Brand",
                     "Invigorating citrus lemon fragrance",
@@ -350,12 +350,12 @@ const productModalData = {
         tag: "Home Doctor Premium",
         brand: "HOME DOCTOR BRAND",
         desc: "Premium Home Doctor floor cleaner line formulated for maximum hygiene, antibacterial safety, and fresh scent.",
-        image: "assets/home_doctor_floor_orange.png",
+        image: "assets/home_doctor_floor_orange_new.png",
         subProducts: [
             {
                 name: "Home Doctor Floor Cleaner - Orange Fresh",
                 desc: "Premium Home Doctor floor cleaner with a sweet Orange zest aroma. Delivers sparkling streak-free shine and deep grease cutting.",
-                image: "assets/home_doctor_floor_orange.png",
+                image: "assets/home_doctor_floor_orange_new.png",
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
@@ -374,7 +374,7 @@ const productModalData = {
             {
                 name: "Home Doctor Floor Cleaner - Lime Fresh",
                 desc: "Premium Home Doctor floor cleaner with an invigorating Lime Fresh aroma. Removes sticky dirt and sanitizes.",
-                image: "assets/home_doctor_floor_green.png",
+                image: "assets/home_doctor_floor_green_new.png",
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
@@ -393,7 +393,7 @@ const productModalData = {
             {
                 name: "Home Doctor Floor Cleaner - Floral",
                 desc: "Premium Home Doctor floor cleaner with a sweet, long-lasting Floral fragrance. Leaves floors clean, germ-free, and fragrant.",
-                image: "assets/home_doctor_floor_pink.png",
+                image: "assets/home_doctor_floor_pink_new.png",
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
@@ -412,7 +412,7 @@ const productModalData = {
             {
                 name: "Home Doctor Floor Cleaner - White (Pine)",
                 desc: "Premium Home Doctor white pine emulsion providing deep sanitizing cleaning action and natural insect repellency.",
-                image: "assets/home_doctor_floor_white.png",
+                image: "assets/home_doctor_floor_white_new.png",
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Herbal oil infused antibacterial formula",
@@ -431,7 +431,7 @@ const productModalData = {
             {
                 name: "Home Doctor Floor Cleaner - Lemon Yellow",
                 desc: "Premium Home Doctor floor cleaner with a bright Lemon Fresh aroma. Cuts grease, repels insects, and sanitizes.",
-                image: "assets/home_doctor_floor_yellow.png",
+                image: "assets/home_doctor_floor_yellow_new.png",
                 highlights: [
                     "Formulated by Home Doctor Brand",
                     "Antibacterial sanitizer action",
